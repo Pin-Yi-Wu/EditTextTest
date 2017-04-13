@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!-- 默认状态提示颜色和字体-->
+        <item name="android:textColorHint">#D50000</item>
+        <item name="android:textSize">14sp</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#D50000</item>
+        <item name="colorControlNormal">#ff4081</item>
+        <!-- 选择的底线颜色 -->
+        <item name="colorControlActivated">#ff4081</item>
+
+    </style>
+    <style name="TextInputHint" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">#DD2600</item>
+    </style>
+</resources>

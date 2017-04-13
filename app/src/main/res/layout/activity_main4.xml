@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mina.edittexttest2.MainActivity2">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/tool_bar"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="127dp"
+        android:layout_height="57dp"
+        android:text="凯盛国际"
+        android:textSize="30sp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintVertical_bias="0.615"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintTop_toTopOf="@+id/toolbar" />
+
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="0dp"
+        android:layout_height="82dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="159dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="89dp"
+        android:layout_weight="1"
+        android:text="登录"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/hide01"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <CheckBox
+        android:id="@+id/hide01"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:button="@mipmap/eyeopen2"
+        android:checked="true"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintLeft_toRightOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/btnsignup2"
+        android:layout_width="122dp"
+        android:layout_height="48dp"
+        android:text="新注册帐户"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="29dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="38dp" />
+
+    <Button
+        android:id="@+id/btnforget"
+        android:layout_width="121dp"
+        android:layout_height="48dp"
+        android:text="忘记密码?"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="25dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="245dp"
+        android:layout_marginBottom="26dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:weightSum="2"
+        app:layout_constraintHorizontal_bias="0.365"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/btnlogin">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/usernameWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:hint="username"
+            android:theme="@style/AppTheme"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="-21dp">
+
+            <EditText
+                android:id="@+id/edtlogin1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="34dp"
+                android:layout_marginEnd="33dp"
+                android:layout_marginLeft="33dp"
+                android:layout_marginRight="33dp"
+                android:layout_marginStart="33dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/edtpassword2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/passwordWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usernameWrapper"
+            android:layout_marginTop="4dp"
+            android:layout_weight="1"
+            android:hint="password"
+            android:theme="@style/AppTheme"
+            >
+
+            <EditText
+                android:id="@+id/edtpassword2"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_marginBottom="169dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginStart="35dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_constraintBottom_creator="1"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1" />
+
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+
+    <!--测试
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="350dp"
+        android:layout_height="202dp"
+        android:layout_marginBottom="66dp"
+        android:layout_marginEnd="5dp"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="67dp"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:weightSum="2"
+        app:layout_constraintBottom_toTopOf="@+id/btnsignup2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/btnforget"
+        app:layout_constraintTop_toBottomOf="@+id/img1"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/usernameWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="用戶名"
+            android:theme="@style/AppTheme"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="-21dp">
+
+            <EditText
+                android:id="@+id/edtlogin1"
+                android:layout_width="353dp"
+                android:layout_height="49dp"
+                android:layout_marginBottom="34dp"
+                android:layout_marginEnd="33dp"
+                android:layout_marginLeft="33dp"
+                android:layout_marginRight="33dp"
+                android:layout_marginStart="33dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toTopOf="@+id/edtpassword2"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/passwordWrapper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/usernameWrapper"
+            android:layout_marginTop="20dp"
+            android:hint="password"
+            android:theme="@style/AppTheme"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="85dp">
+
+            <EditText
+                android:id="@+id/edtpassword2"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginBottom="169dp"
+                android:layout_marginEnd="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginStart="35dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_constraintBottom_creator="1"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+    -->
+
+</android.support.constraint.ConstraintLayout>
